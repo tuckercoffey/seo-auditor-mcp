@@ -191,4 +191,4 @@ MIT License - see LICENSE file for details.
 
 - GitHub Issues: Report bugs and feature requests
 - Documentation: See docs/ directory for detailed guides
-- Examples: Check examples/ directory for usage patterns
+- Examples: Check examples/ directory for usage patterns# seo-auditor-mcp
