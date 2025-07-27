@@ -19,9 +19,35 @@ A comprehensive SEO auditing and analysis MCP (Model Context Protocol) server th
 
 ## Installation
 
+### Option 1: One-Command Install (Recommended)
+
+Install directly into Claude Code with a single command:
+
+```bash
+# Basic installation
+curl -sSL https://raw.githubusercontent.com/tuckercoffey/seo-auditor-mcp/main/install.sh | bash
+
+# Install with Google API key for enhanced features
+curl -sSL https://raw.githubusercontent.com/tuckercoffey/seo-auditor-mcp/main/install.sh | bash -s -- --google-api-key YOUR_API_KEY
+```
+
+### Option 2: CLI Installer
+
+```bash
+# Clone and run installer
+git clone https://github.com/tuckercoffey/seo-auditor-mcp.git
+cd seo-auditor-mcp
+python install.py install
+
+# Or install with API keys
+python install.py install --google-api-key YOUR_KEY --ahrefs-api-key YOUR_KEY
+```
+
+### Option 3: Manual Installation
+
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-org/seo-auditor-mcp.git
+   git clone https://github.com/tuckercoffey/seo-auditor-mcp.git
    cd seo-auditor-mcp
    ```
 
@@ -56,7 +82,7 @@ A comprehensive SEO auditing and analysis MCP (Model Context Protocol) server th
 
 ### MCP Configuration
 
-Add to your Claude Code configuration:
+If using the CLI installer, configuration is automatic. For manual setup, add to your Claude Code configuration:
 
 ```json
 {
@@ -70,6 +96,30 @@ Add to your Claude Code configuration:
     }
   }
 }
+```
+
+## CLI Management
+
+The installer provides management commands:
+
+```bash
+# Install
+python install.py install
+
+# Install with API keys
+python install.py install --google-api-key YOUR_KEY
+
+# Check status
+python install.py status
+
+# Uninstall
+python install.py uninstall
+
+# Install to custom directory
+python install.py install --dir ~/my-mcp-servers/seo-auditor
+
+# Force reinstall
+python install.py install --force
 ```
 
 ## Usage
