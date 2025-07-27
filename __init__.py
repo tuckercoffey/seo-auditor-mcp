@@ -1,0 +1,1 @@
+# SEO Auditor MCP Server

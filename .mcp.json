@@ -1,0 +1,19 @@
+{
+  "name": "seo-auditor",
+  "description": "Comprehensive SEO auditing and analysis tools for LLMs",
+  "version": "1.0.0",
+  "server": {
+    "command": "python",
+    "args": ["server.py"],
+    "env": {
+      "GOOGLE_API_KEY": "${GOOGLE_API_KEY}",
+      "GSC_CREDENTIALS": "${GSC_CREDENTIALS}",
+      "AHREFS_API_KEY": "${AHREFS_API_KEY}",
+      "SEMRUSH_API_KEY": "${SEMRUSH_API_KEY}"
+    }
+  },
+  "capabilities": {
+    "tools": true,
+    "resources": true
+  }
+}
